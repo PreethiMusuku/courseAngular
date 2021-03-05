@@ -1,0 +1,40 @@
+<h2>Student Registered courses Details</h2> 
+
+<hr/>
+<div *ngIf="course">
+  <div>
+    <label><b>Student Id: </b></label> {{course.stId}}
+  </div>
+  <div>
+    <label><b>Student Name: </b></label> {{course.stName}}
+  </div>
+  <div>
+    <label><b>Qualification: </b></label> {{course.qualification}}
+  </div>
+  <div>
+    <label><b>Mail: </b></label> {{course.mailid}}
+  </div>
+  <div>
+    <label><b>Password: </b></label> {{course.password}}
+  </div>
+</div>
+
+<!-- <div *ngIf="course">
+    <div>
+        <label><b>Course Id: </b></label> {{course.courseId}}
+      </div>
+      <div>
+        <label><b>Course Name: </b></label> {{course.courseName}}
+      </div>
+      <div>
+      <div>
+        <label><b>StartDate: </b></label> {{course.startDate}}
+        </div>
+       <div>
+        <label><b>EndDate: </b></label> {{course.endDate}}
+        </div>
+          <div> -->
+
+
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Course List</button><br>
